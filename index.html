@@ -42,7 +42,7 @@
                             <code>audio</code> element.
                     </audio>
                 </figure>
-                
+
                 <details>
                     <summary>Details</summary>
                     Congrats you found me.
@@ -74,6 +74,84 @@
                     Sorry, your browser doesn't support embedded videos.
                 </video>
             </article>
+            <h3>Make your own journal!</h3>
+            <form>
+                <label>Name:
+                  <input name="submitted-name" autocomplete="name">
+                </label>
+                <button>Save</button>
+              </form>
+              
+
+              <form method="post">
+                <label for="start">Date:</label>
+
+                <input type="date" id="start" name="trip-start"
+                       value="2018-07-22"
+                       min="2018-01-01" max="2018-12-31">
+              </form>
+              
+             
+              <form method="post">
+                <fieldset>
+                  <legend>You exercised?</legend>
+                  <label><input type="radio" name="radio"> True</label>
+                  <label><input type="radio" name="radio"> False</label>
+                </fieldset>
+              </form>
+
+              <form method="post">
+                <p>Choose your favorite tea:</p>
+
+                <div>
+                  <input type="checkbox" id="jasmine" name="jasmine"
+                         checked>
+                  <label for="jasmine">Jasmine</label>
+                </div>
+                
+                <div>
+                  <input type="checkbox" id="sencha" name="sencha">
+                  <label for="sencha">Sencha</label>
+                </div>
+                <div>
+                    <label for="story">Describe your breakfast in detail:</label> <br>
+
+                    <textarea id="story" name="story"
+                            rows="3" cols="33">I perfectly flipped the pancake...
+                    </textarea>
+                </div>
+                <div>
+                    <label for="ice-cream-choice">What ice cream will you have for dinner:</label> 
+                    <input list="ice-cream-flavors" id="ice-cream-choice" name="ice-cream-choice" />
+                
+                
+                    <datalist id="ice-cream-flavors">
+                         <option value="Chocolate">
+                         <option value="Coconut">
+                         <option value="Mint">
+                         <option value="Strawberry">
+                         <option value="Vanilla">
+                  </datalist>               
+                 </div>
+
+                <div>
+                    <label for="pet-select">Choose a pet you will buy:</label>
+
+                    <select name="pets" id="pet-select">
+                        <option value="">--Please choose an option--</option>
+                        <option value="dog">Dog</option>
+                        <option value="cat">Cat</option>
+                        <option value="hamster">Hamster</option>
+                        <option value="parrot">Parrot</option>
+                        <option value="spider">Spider</option>
+                        <option value="goldfish">Goldfish</option>
+                    </select>                    
+                </div>
+                <div class="form-example">
+                    <input type="submit" value="Submit">
+                </div>
+                
+              </form>
         </main>
 
     </body>
