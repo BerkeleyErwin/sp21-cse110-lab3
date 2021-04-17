@@ -1,0 +1,111 @@
+* {
+  color: green;
+}
+
+html,
+body { /* This is my comment */
+    
+  background-color: #2eecec;
+  height: 100%;
+  padding: 0cm;
+  margin: 0Q;
+}
+
+.container {
+  grid-template-columns: [first] 40px [line2] 50px [line3] auto [col4-start] 50px [five] 40px [end];
+}
+
+.num-1 {
+  grid-column-start: 2;
+  grid-column-end: five;
+  grid-row-start: row1-start;
+  grid-row-end: 3;
+}
+
+.num-2 {
+  grid-column-start: 1;
+  grid-column-end: span col4-start;
+  grid-row-start: 2;
+  grid-row-end: span 2;
+}
+.flexbox-container {
+    flex-wrap: flex;
+    align-items: stretch;
+    align-content: flex-start;
+  }
+
+  .item-1 {
+    border: 3px solid #333;
+      min-height: 100px;
+  }
+
+  .item-2 {
+    border: 3px solid #333;
+      min-height: 100px;
+  }
+
+  .item-3 {
+    border: 3px solid #333;
+      min-height: 100px;
+  }
+
+li {
+    font-size: 12px;
+}
+      
+p {
+    font-family: Helvetica, "Trebuchet MS", Verdana, sans-serif;
+    color: red;
+    text-decoration: green wavy underline;
+    text-align: center;
+  }
+
+.block,
+li {
+  border: 2px solid blue;
+  padding: .5em;
+  margin: auto
+
+}
+
+@media (any-hover: hover) {
+    a:hover {
+      background: yellow;
+    }
+  }
+
+  a:active {
+    color: rgb(196, 4, 255);
+  }
+
+  .box {
+    background-color: #567895;
+    border: 5px solid #0b385f;
+    border-bottom-style: dashed;
+    color: #fff;
+  }
+  
+  h2 {
+    border-top: 2px dotted rebeccapurple;
+    border-bottom: 1em double rgb(24, 163, 78);
+  }
+
+  #story {
+    background-color: skyblue;
+  }
+
+  a[href$=".com"] {
+    font-style: italic;
+  }
+
+  div > span {
+    background-color: purple;
+  }
+
+  p ~ span {
+    background-color: red;
+  }
+
+  img + p {
+    font-weight: bold;
+  }

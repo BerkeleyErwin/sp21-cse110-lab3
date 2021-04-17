@@ -3,16 +3,32 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css">
         <title>Berkeley's Journal Entries</title>
     </head>
     <body>
         <main>
-            <h1>Berkeley's Journal</h1>
+            <div class="box">
+                <h1>Berkeley's Journal</h1>
+            </div>
+
+            <div class="container">
+                <div class="container num-1">first box</div>
+                <div class="container num-2">second box</div>
+            </div>
+            
             <hr>
             <article>
                 <h2>4/8/2021</h2>
-                <span>Today I woke up and made some oatmeal</span>
-                <div>Then I started working on my CS homework</div>
+                <div>
+                    <span>Today I woke up and made some oatmeal</span>
+                </div>
+                
+                <div class="flexbox-container">
+                    <div class="flexbox-container item-1">hi</div>
+                    <div class="flexbox-container item-2">there</div>
+                    <div class="flexbox-container item-3">everyone</div>
+                </div>
                 <p>Some things that I need to do today include</p>
                 <ul>
                     <li>Update my professional profiles
@@ -28,11 +44,13 @@
                 <img class="fit-picture"
                 src="https://raw.githubusercontent.com/BerkeleyErwin/Lab2/website/image.gif"
                 alt="Made this my background">
+                <p>This is my beautiful picture</p>
                 <hr>
             </article>
 
             <article>
                 <h2>4/7/2021</h2>
+                <a href="#">Try hovering over me!</a>
                 <figure>
                     <figcaption>Cool song I listened to:</figcaption>
                     <audio
@@ -43,6 +61,8 @@
                     </audio>
                 </figure>
 
+                <p>Here is a paragraph.</p>
+                <span>here is red</span>
                 <details>
                     <summary>Details</summary>
                     Congrats you found me.
