@@ -8,6 +8,25 @@ body { /* This is my comment */
   margin: 0Q;
 }
 
+.flexbox-container {
+    flex-wrap: flex;
+  }
+
+  .item-1 {
+    border: 3px solid #333;
+      min-height: 100px;
+  }
+
+  .item-2 {
+    border: 3px solid #333;
+      min-height: 100px;
+  }
+
+  .item-3 {
+    border: 3px solid #333;
+      min-height: 100px;
+  }
+
 li {
     font-size: 12px;
 }
@@ -37,4 +56,17 @@ li {
     color: rgb(196, 4, 255);
   }
 
+  .box {
+    background-color: #567895;
+    border: 5px solid #0b385f;
+    border-bottom-style: dashed;
+    color: #fff;
+  }
+  
+  h2 {
+    border-top: 2px dotted rebeccapurple;
+    border-bottom: 1em double rgb(24, 163, 78);
+  }
+
+  
 
