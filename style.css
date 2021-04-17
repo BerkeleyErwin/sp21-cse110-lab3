@@ -1,0 +1,40 @@
+
+html,
+body { /* This is my comment */
+    
+  background-color: #2eecec;
+  height: 100%;
+  padding: 0cm;
+  margin: 0Q;
+}
+
+li {
+    font-size: 12px;
+}
+      
+p {
+    font-family: Helvetica, "Trebuchet MS", Verdana, sans-serif;
+    color: red;
+    text-decoration: green wavy underline;
+    text-align: center;
+  }
+
+.block,
+li {
+  border: 2px solid blue;
+  padding: .5em;
+  margin: auto
+
+}
+
+@media (any-hover: hover) {
+    a:hover {
+      background: yellow;
+    }
+  }
+
+  a:active {
+    color: rgb(196, 4, 255);
+  }
+
+
