@@ -1,3 +1,6 @@
+* {
+  color: green;
+}
 
 html,
 body { /* This is my comment */
@@ -8,8 +11,27 @@ body { /* This is my comment */
   margin: 0Q;
 }
 
+.container {
+  grid-template-columns: [first] 40px [line2] 50px [line3] auto [col4-start] 50px [five] 40px [end];
+}
+
+.num-1 {
+  grid-column-start: 2;
+  grid-column-end: five;
+  grid-row-start: row1-start;
+  grid-row-end: 3;
+}
+
+.num-2 {
+  grid-column-start: 1;
+  grid-column-end: span col4-start;
+  grid-row-start: 2;
+  grid-row-end: span 2;
+}
 .flexbox-container {
     flex-wrap: flex;
+    align-items: stretch;
+    align-content: flex-start;
   }
 
   .item-1 {
@@ -68,5 +90,22 @@ li {
     border-bottom: 1em double rgb(24, 163, 78);
   }
 
-  
+  #story {
+    background-color: skyblue;
+  }
 
+  a[href$=".com"] {
+    font-style: italic;
+  }
+
+  div > span {
+    background-color: purple;
+  }
+
+  p ~ span {
+    background-color: red;
+  }
+
+  img + p {
+    font-weight: bold;
+  }
